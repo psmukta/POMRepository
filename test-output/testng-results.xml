@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-01-08T03:33:47Z" name="Default suite" finished-at="2019-01-08T03:33:52Z" duration-ms="4438">
+    <groups>
+    </groups>
+    <test started-at="2019-01-08T03:33:47Z" name="Default test" finished-at="2019-01-08T03:33:52Z" duration-ms="4438">
+      <class name="superTechPOMTest.STMainTest">
+        <test-method is-config="true" signature="initiatialize()[pri:0, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:36Z" name="initiatialize" finished-at="2019-01-08T03:33:47Z" duration-ms="11340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiatialize -->
+        <test-method signature="GetTextTest()[pri:0, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:47Z" name="GetTextTest" finished-at="2019-01-08T03:33:47Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetTextTest -->
+        <test-method signature="RadioButtontest()[pri:1, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:47Z" name="RadioButtontest" finished-at="2019-01-08T03:33:47Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RadioButtontest -->
+        <test-method signature="CheckBoxTest()[pri:2, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:47Z" name="CheckBoxTest" finished-at="2019-01-08T03:33:48Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBoxTest -->
+        <test-method signature="DropDpwnTest()[pri:3, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:48Z" name="DropDpwnTest" finished-at="2019-01-08T03:33:48Z" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDpwnTest -->
+        <test-method signature="DoubleClickTest()[pri:4, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:48Z" name="DoubleClickTest" finished-at="2019-01-08T03:33:48Z" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoubleClickTest -->
+        <test-method signature="SubMenutest()[pri:5, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:48Z" name="SubMenutest" finished-at="2019-01-08T03:33:51Z" duration-ms="3264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubMenutest -->
+        <test-method signature="LinkTest()[pri:6, instance:superTechPOMTest.STMainTest@5b94b04d]" started-at="2019-01-08T03:33:51Z" name="LinkTest" finished-at="2019-01-08T03:33:52Z" duration-ms="98" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[java.base/sun.net.www.protocol.file.FileURLConnection cannot be cast to java.base/java.net.HttpURLConnection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: java.base/sun.net.www.protocol.file.FileURLConnection cannot be cast to java.base/java.net.HttpURLConnection
+at superTechPOMPages.SuperTechMainPage.verifyActiveLinks(SuperTechMainPage.java:111)
+at superTechPOMPages.SuperTechMainPage.linkCount(SuperTechMainPage.java:105)
+at superTechPOMTest.STMainTest.LinkTest(STMainTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkTest -->
+      </class> <!-- superTechPOMTest.STMainTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
